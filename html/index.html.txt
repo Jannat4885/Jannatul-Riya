@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>DailyFlash | Home</title>
-    <meta name="author" content="Nure Alom Nobel">
+    <meta name="author" content="Jannatul Fedous Riya">
     <meta name="description" content="DailyFlash - Breaking news and trending stories from around the world.">
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f5f5f5; }
@@ -110,3 +110,4 @@
 
 </body>
 </html>
+
