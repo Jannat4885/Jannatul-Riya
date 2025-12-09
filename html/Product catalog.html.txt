@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ElectroMart - Product Catalogue</title>
-    <meta name="author" content="Nure Alom Nobel">
+    <meta name="author" content="Jannatul Ferdous Riya">
     <meta name="description" content="ElectroMart online electronics store product catalogue showcasing latest gadgets">
 
     <style>
@@ -159,3 +159,4 @@
 
 </body>
 </html>
+
