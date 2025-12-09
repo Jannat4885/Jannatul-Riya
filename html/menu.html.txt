@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>TasteHub Restaurant Menu</title>
-    <meta name="author" content="Nure Alom Nobel">
+    <meta name="author" content="Jannatul Ferdous Riya">
     <meta name="description" content="TasteHub - Explore our mouth-watering restaurant menu with starters, main course, desserts, and drinks.">
     <style>
         body {
@@ -257,4 +257,5 @@
 
 </body>
 </html>
+
 
