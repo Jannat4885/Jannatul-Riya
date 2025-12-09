@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form Validation</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        .error { color: red; font-size: 14px; }
+        #success { color: green; font-weight: bold; margin-top: 10px; }
+        input { display: block; margin-bottom: 5px; width: 250px; padding: 6px; }
+    </style>
+</head>
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form id="regForm">
+
+    <label>Full Name:</label>
+    <input type="text" id="name">
+    <div class="error" id="nameErr"></div>
+
+    <label>Email:</label>
+    <input type="text" id="email">
+    <div class="error" id="emailErr"></div>
+
+    <label>Password:</label>
+    <input type="password" id="password">
+    <div class="error" id="passErr"></div>
+
+    <label>Confirm Password:</label>
+    <input type="password" id="confirmPassword">
+    <div class="error" id="confirmErr"></div>
+
+    <label>Phone Number:</label>
+    <input type="text" id="phone">
+    <div class="error" id="phoneErr"></div>
+
+    <button type="submit">Submit</button>
+</form>
+
+<p id="success"></p>
+
+<script>
+document.getElementById("regForm").addEventListener("submit", function(e){
+    e.preventDefault(); // stop form submit
+
+    // clear old errors
+    document.getElementById("nameErr").innerText = "";
+    document.getElementById("emailErr").innerText = "";
+    document.getElementById("passErr").innerText = "";
+    document.getElementById("confirmErr").innerText = "";
+    document.getElementById("phoneErr").innerText = "";
+    document.getElementById("success").innerText = "";
+
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let password = document.getElementById("password").value;
+    let confirmPassword = document.getElementById("confirmPassword").value;
+    let phone = document.getElementById("phone").value;
+
+    let valid = true;
+
+    if(name === ""){
+        document.getElementById("nameErr").innerText = "Name cannot be empty";
+        valid = false;
+    }
+
+    if(!email.includes("@") || !email.includes(".")){
+        document.getElementById("emailErr").innerText = "Invalid email format";
+        valid = false;
+    }
+
+    if(password.length < 6){
+        document.getElementById("passErr").innerText = "Password must be at least 6 characters";
+        valid = false;
+    }
+
+    if(password !== confirmPassword){
+        document.getElementById("confirmErr").innerText = "Passwords do not match";
+        valid = false;
+    }
+
+    if(isNaN(phone) || phone === ""){
+        document.getElementById("phoneErr").innerText = "Phone must contain digits only";
+        valid = false;
+    }
+
+    if(valid){
+        document.getElementById("success").innerText = "Registration Successful!";
+    }
+});
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Slider</title>
+    <style>
+        body { text-align: center; font-family: Arial; }
+        img { width: 400px; height: 250px; border-radius: 10px; margin-bottom: 10px; }
+        button { padding: 10px 20px; margin: 5px; }
+    </style>
+</head>
+<body>
+
+<h2>Travel Destination Slider</h2>
+
+<img id="slider" src="https://picsum.photos/id/1018/400/250">
+
+<br>
+<button onclick="prevImage()">Previous</button>
+<button onclick="nextImage()">Next</button>
+
+<script>
+let images = [
+    "https://picsum.photos/id/1018/400/250",
+    "https://picsum.photos/id/1025/400/250",
+    "https://picsum.photos/id/1035/400/250",
+    "https://picsum.photos/id/1043/400/250"
+];
+
+let index = 0;
+let imgTag = document.getElementById("slider");
+
+function nextImage(){
+    index++;
+    if(index >= images.length){
+        index = 0; // loop restart
+    }
+    imgTag.src = images[index];
+}
+
+function prevImage(){
+    index--;
+    if(index < 0){
+        index = images.length - 1; // loop to last
+    }
+    imgTag.src = images[index];
+}
+
+// Auto Slide
+setInterval(nextImage, 3000);
+</script>
+
+</body>
+</html>
+

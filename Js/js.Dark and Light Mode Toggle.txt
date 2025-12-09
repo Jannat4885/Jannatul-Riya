@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form Validation</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        .error { color: red; font-size: 14px; }
+        input { margin-bottom: 5px; display: block; }
+    </style>
+</head>
+
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form id="regForm">
+    <label>Full Name</label>
+    <input type="text" id="name">
+    <p class="error" id="nameError"></p>
+
+    <label>Email</label>
+    <input type="text" id="email">
+    <p class="error" id="emailError"></p>
+
+    <label>Password</label>
+    <input type="password" id="password">
+    <p class="error" id="passError"></p>
+
+    <label>Confirm Password</label>
+    <input type="password" id="confirm">
+    <p class="error" id="confirmError"></p>
+
+    <label>Phone Number</label>
+    <input type="text" id="phone">
+    <p class="error" id="phoneError"></p>
+
+    <button type="submit">Submit</button>
+</form>
+
+<p id="successMsg" style="color: green; font-size:18px;"></p>
+
+<script>
+    document.getElementById("regForm").addEventListener("submit", function(e){
+        e.preventDefault();
+
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+        let confirm = document.getElementById("confirm").value;
+        let phone = document.getElementById("phone").value;
+
+        let valid = true;
+
+        // Clear previous errors
+        document.getElementById("nameError").innerText = "";
+        document.getElementById("emailError").innerText = "";
+        document.getElementById("passError").innerText = "";
+        document.getElementById("confirmError").innerText = "";
+        document.getElementById("phoneError").innerText = "";
+
+        if(name === ""){
+            document.getElementById("nameError").innerText = "Full Name is required";
+            valid = false;
+        }
+
+        if(!email.includes("@") || !email.includes(".")){
+            document.getElementById("emailError").innerText = "Enter a valid email";
+            valid = false;
+        }
+
+        if(password.length < 6){
+            document.getElementById("passError").innerText = "Password must be at least 6 characters";
+            valid = false;
+        }
+
+        if(password !== confirm){
+            document.getElementById("confirmError").innerText = "Passwords do not match";
+            valid = false;
+        }
+
+        if(isNaN(phone) || phone === ""){
+            document.getElementById("phoneError").innerText = "Phone number must contain only digits";
+            valid = false;
+        }
+
+        if(valid){
+            document.getElementById("successMsg").innerText = "Registration Successful!";
+        }
+    });
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Slider</title>
+</head>
+
+<body>
+
+<h2>Simple Image Slider</h2>
+
+<img id="slider" src="" width="400" height="250"><br><br>
+
+<button onclick="prevImage()">Previous</button>
+<button onclick="nextImage()">Next</button>
+
+<script>
+    let images = [
+        "https://picsum.photos/400/250?random=1",
+        "https://picsum.photos/400/250?random=2",
+        "https://picsum.photos/400/250?random=3"
+    ];
+
+    let index = 0;
+
+    document.getElementById("slider").src = images[index];
+
+    function nextImage(){
+        index++;
+        if(index >= images.length){ index = 0; }
+        document.getElementById("slider").src = images[index];
+    }
+
+    function prevImage(){
+        index--;
+        if(index < 0){ index = images.length - 1; }
+        document.getElementById("slider").src = images[index];
+    }
+
+    setInterval(nextImage, 3000);
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dark/Light Mode</title>
+    <style>
+        body {
+            font-family: Arial;
+            transition: 0.3s;
+        }
+        .dark {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body id="page">
+
+<h2>Dark / Light Mode Toggle</h2>
+<button id="toggleBtn">Switch to Dark Mode</button>
+
+<script>
+    let darkMode = false;
+
+    document.getElementById("toggleBtn").onclick = function(){
+        darkMode = !darkMode;
+
+        let page = document.getElementById("page");
+
+        if(darkMode){
+            page.classList.add("dark");
+            this.innerText = "Switch to Light Mode";
+        } else {
+            page.classList.remove("dark");
+            this.innerText = "Switch to Dark Mode";
+        }
+    }
+</script>
+
+</body>
+</html>
+
