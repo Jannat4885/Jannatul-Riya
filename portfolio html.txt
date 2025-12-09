@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Required Metadata -->
+    <title>Nure Alom Nobel - Portfolio</title>
+    <meta name="author" content="Nure Alom Nobel">
+    <meta name="description" content="Personal Portfolio webpage of Nure Alom Nobel">
+    <meta name="keywords" content="Portfolio, Web Developer, Computer Science, Bangladesh">
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f2f2f2;
+        }
+        header{
+            background: #333;
+            padding: 15px;
+            color: #fff;
+        }
+        nav a{
+            margin-right: 15px;
+            color: white;
+            text-decoration: none;
+        }
+        main{
+            padding: 20px;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td{
+            border: 1px solid #555;
+        }
+        th, td{
+            padding: 10px;
+            text-align: center;
+        }
+        footer{
+            background: #333;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nure Alom Nobel</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#bio">About</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Biography section -->
+        <section id="bio">
+            <h2>About Me</h2>
+            <p>
+                I am a Computer Science student passionate about software development and artificial intelligence.
+                Currently, I am preparing for internship opportunities where I can apply my technical and analytical skills.
+            </p>
+        </section>
+
+        <!-- Education Table -->
+        <section id="education">
+            <h2>Educational Qualifications</h2>
+            <table>
+                <tr>
+                    <th>Degree</th>
+                    <th>Institute</th>
+                    <th>Passing Year</th>
+                    <th>Result</th>
+                </tr>
+                <tr>
+                    <td>BSc in CSE</td>
+                    <td>Your University Name</td>
+                    <td>2025</td>
+                    <td>Ongoing</td>
+                </tr>
+                <tr>
+                    <td>HSC</td>
+                    <td>Your College Name</td>
+                    <td>2020</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>SSC</td>
+                    <td>Your School Name</td>
+                    <td>2018</td>
+                    <td>A+</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label>Your Name:</label><br>
+                <input type="text" required><br><br>
+
+                <label>Email:</label><br>
+                <input type="email" required><br><br>
+
+                <label>Message:</label><br>
+                <textarea rows="5" required></textarea><br><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Nure Alom Nobel | All rights reserved</p>
+    </footer>
+
+</body>
+</html>
