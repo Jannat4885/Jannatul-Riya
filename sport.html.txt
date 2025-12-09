@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DailyFlash | Sports</title>
+    <meta name="author" content="Nure Alom Nobel">
+    <meta name="description" content="DailyFlash - Sports news, scores, and updates.">
+</head>
+<body>
+<a id="top"></a>
+<header>
+    <img src="https://via.placeholder.com/60x60.png?text=Logo" alt="DailyFlash Logo">
+    <div>
+        <h1>DailyFlash</h1>
+        <p>Your Source for Instant News</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="world.html">World</a></li>
+                <li><a href="sports.html" class="active">Sports</a></li>
+                <li><a href="#">Tech</a></li>
+                <li><a href="#">Lifestyle</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="articles">
+        <article>
+            <h2>National Team Wins Championship</h2>
+            <small>Published: Dec 8, 2025</small>
+            <img src="https://via.placeholder.com/150x100.png?text=Championship" alt="Sports Championship">
+            <p>The national football team triumphed in the thrilling final match, securing their spot in the championship history books.</p>
+            <a href="#">Read More</a>
+            <hr>
+        </article>
+
+        <article>
+            <h2>Upcoming Olympics Preparations</h2>
+            <small>Published: Dec 7, 2025</small>
+            <img src="https://via.placeholder.com/150x100.png?text=Olympics" alt="Olympics Preparation">
+            <p>Organizers are finalizing the venues and schedules for the next Olympic Games, ensuring athlete safety and fan engagement.</p>
+            <a href="#">Read More</a>
+            <hr>
+        </article>
+    </section>
+
+    <aside>
+        <h3>Top Headlines</h3>
+        <ul>
+            <li><a href="#">Football League Updates</a></li>
+            <li><a href="#">Basketball Finals</a></li>
+            <li><a href="#">Tennis Open Results</a></li>
+        </ul>
+        <div style="margin-top: 15px; padding: 10px; background-color: #bdc3c7; text-align:center;">
+            Advertisement Space
+        </div>
+    </aside>
+</main>
+
+<footer>
+    <p>© 2025 DailyFlash | All Rights Reserved</p>
+    <p>
+        Follow us: 
+        <a href="#">Facebook</a> | 
+        <a href="#">X</a> | 
+        <a href="#">Instagram</a> | 
+        <a href="#">LinkedIn</a>
+    </p>
+    <p><a href="#top">Back to Top</a></p>
+</footer>
+</body>
+</html>
