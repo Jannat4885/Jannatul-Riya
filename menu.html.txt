@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TasteHub Restaurant Menu</title>
+    <meta name="author" content="Nure Alom Nobel">
+    <meta name="description" content="TasteHub - Explore our mouth-watering restaurant menu with starters, main course, desserts, and drinks.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #c0392b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            width: 80px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            border-bottom: 2px solid #c0392b;
+            padding-bottom: 5px;
+        }
+
+        article {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        article img {
+            width: 150px;
+            height: auto;
+            float: left;
+            margin-right: 15px;
+        }
+
+        article p {
+            margin: 0;
+        }
+
+        fieldset {
+            border: 2px solid #c0392b;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #c0392b;
+        }
+
+        aside {
+            background-color: #fdebd0;
+            padding: 15px;
+            margin-top: 20px;
+            border-left: 5px solid #c0392b;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #c0392b;
+            float: right;
+        }
+
+        .back-top {
+            display: block;
+            margin-top: 10px;
+            text-align: right;
+        }
+
+        hr {
+            border: 1px solid #ccc;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+<a id="top"></a>
+
+<header>
+    <img src="https://via.placeholder.com/80x80.png?text=Logo" alt="TasteHub Logo">
+    <h1>TasteHub Restaurant</h1>
+    <p>Deliciousness Delivered Fresh Every Day!</p>
+    <nav>
+        <a href="#starters">Starters</a>
+        <a href="#maincourse">Main Course</a>
+        <a href="#desserts">Desserts</a>
+        <a href="#drinks">Drinks</a>
+    </nav>
+</header>
+
+<main>
+    <!-- Starters -->
+    <section id="starters">
+        <h2>Starters</h2>
+
+        <article>
+            <img src="https://via.placeholder.com/150x100.png?text=Spring+Rolls" alt="Spring Rolls">
+            <p><strong>Spring Rolls</strong></p>
+            <p>Crispy rolls stuffed with fresh vegetables and herbs.</p>
+            <p class="price">$5.99</p>
+        </article>
+
+        <article>
+            <img src="https://via.placeholder.com/150x100.png?text=Garlic+Bread" alt="Garlic Bread">
+            <p><strong>Garlic Bread</strong></p>
+            <p>Freshly baked bread with garlic butter and herbs.</p>
+            <p class="price">$3.99</p>
+        </article>
+
+        <a class="back-top" href="#top">Back to Top</a>
+    </section>
+
+    <hr>
+
+    <!-- Main Course -->
+    <section id="maincourse">
+        <h2>Main Course</h2>
+
+        <article>
+            <img src="https://via.placeholder.com/150x100.png?text=Grilled+Chicken" alt="Grilled Chicken">
+            <p><strong>Grilled Chicken</strong></p>
+            <p>Marinated chicken grilled to perfection, served with veggies.</p>
+            <p class="price">$12.99</p>
+        </article>
+
+        <article>
+            <img src="https://via.placeholder.com/150x100.png?text=Veg+Pasta" alt="Veg Pasta">
+            <p><strong>Veg Pasta</strong></p>
+            <p>Penne pasta tossed with fresh vegetables and tomato sauce.</p>
+            <p class="price">$10.99</p>
+        </article>
+
+        <a class="back-top" href="#top">Back to Top</a>
+    </section>
+
+    <hr>
+
+    <!-- Desserts -->
+    <section id="desserts">
+        <h2>Desserts</h2>
+
+        <article>
+            <img src="https://via.placeholder.com/150x100.png?text=Chocolate+Cake" alt="Chocolate Cake">
+            <p><strong>Chocolate Cake</strong></p>
+            <p>Rich and moist chocolate cake topped with chocolate frosting.</p>
+            <p class="price">$6.99</p>
+        </article>
+
+        <article>
+            <img src="https://via.placeholder.com/150x100.png?text=Ice+Cream" alt="Ice Cream">
+            <p><strong>Vanilla Ice Cream</strong></p>
+            <p>Creamy vanilla ice cream served with chocolate sauce.</p>
+            <p class="price">$4.99</p>
+        </article>
+
+        <a class="back-top" href="#top">Back to Top</a>
+    </section>
+
+    <hr>
+
+    <!-- Drinks -->
+    <section id="drinks">
+        <h2>Drinks</h2>
+
+        <article>
+            <img src="https://via.placeholder.com/150x100.png?text=Lemonade" alt="Lemonade">
+            <p><strong>Fresh Lemonade</strong></p>
+            <p>Refreshing lemonade made with fresh lemons and mint.</p>
+            <p class="price">$2.99</p>
+        </article>
+
+        <article>
+            <img src="https://via.placeholder.com/150x100.png?text=Coffee" alt="Coffee">
+            <p><strong>Hot Coffee</strong></p>
+            <p>Classic brewed coffee, served hot with optional cream.</p>
+            <p class="price">$3.50</p>
+        </article>
+
+        <a class="back-top" href="#top">Back to Top</a>
+    </section>
+
+    <hr>
+
+    <!-- Chef's Special -->
+    <fieldset>
+        <legend>Chef's Special</legend>
+        <article>
+            <strong>Seafood Platter</strong> - Assorted fresh seafood, grilled to perfection. $18.99
+        </article>
+        <article>
+            <strong>Stuffed Bell Peppers</strong> - Baked peppers stuffed with quinoa and vegetables. $14.99
+        </article>
+    </fieldset>
+
+    <!-- Daily Offers -->
+    <aside>
+        <h3>Daily Offers</h3>
+        <ul>
+            <li>Buy 1 Get 1 Free on Lemonade</li>
+            <li>10% Off on Veg Pasta</li>
+        </ul>
+    </aside>
+
+    <p><a href="#">Book a Table</a></p>
+</main>
+
+<footer>
+    <p>Address: 123 Food Street, CityTown | Contact: +123456789 | Hours: 10 AM - 10 PM</p>
+    <p>Follow us: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
+    <p>© 2025 TasteHub Restaurant | All Rights Reserved | <a href="#top">Back to Top</a></p>
+</footer>
+
+</body>
+</html>
