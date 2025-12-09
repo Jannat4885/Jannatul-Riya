@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>DailyFlash | World</title>
-    <meta name="author" content="Nure Alom Nobel">
+    <meta name="author" content="Jannat Ferdous Riya">
     <meta name="description" content="DailyFlash - World news and trending global stories.">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -74,3 +74,4 @@
 </footer>
 </body>
 </html>
+
